@@ -257,7 +257,7 @@ object DiOFSRH {
           fileRdd.unpersist()
           data = data_new
         }
-        else if(dep_New==dep_Set) { //重要度 is equal to 0
+        else if(dep_New==dep_Set) { //Significance is equal to 0
           println("   Redundancy Analysis...")
           val index_del = nonSignf(rhmats,mode,i,n,3)
           println(data.getNumPartitions)
@@ -335,7 +335,6 @@ object DiOFSRH {
               rhmats.unpersist()
               rhmats = rhmats_del
 
-              /**删除索引、 center pointer and depen值*/
               for(index<-index_del) {
                 mode = mode.-(index)
                 centers.remove(index)
