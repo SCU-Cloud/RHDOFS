@@ -1,4 +1,4 @@
-function [ selectedFeatures,time ] = OSF_RH1( X, Y)
+function [ selectedFeatures,time ] = RHOFS( X, Y)
 % diff: dep_Mean=dep_Set/sum(mode);
 
 
