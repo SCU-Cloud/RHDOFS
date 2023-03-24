@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 import scala.collection.mutable
 import scala.util.Random
 
-object DiOFSRH {
+object RHDOFS {
 
   def getTuple(x:(Long,(String,String))):(Int,(Double,Double))={
     val cls = x._2._2.toInt
