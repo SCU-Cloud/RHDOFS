@@ -151,7 +151,7 @@ object RHDOFS {
     for (i <- 0 until AttrNum) {
       println("#####Calculating Feature-"+(i+1).toString+"#####")
       val t0 = System.currentTimeMillis()
-      val filepath = path+(i+1).toString+"/part-00000"
+      val filepath = path+(i+1).toString+"/"
       /** Cal single LU */
       println("   Calculating single LU...")
       val fileRdd = sc.textFile(filepath, partitionNum).persist(StorageLevel.MEMORY_AND_DISK)
