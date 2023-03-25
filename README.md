@@ -12,7 +12,7 @@ There are three main parts:
     * Online redundancy elimination (golden rectangles). When the significance of feature $f_t$ is equal to 0, it will get to this stage. A subset $B_t$ with maximal cardinality of the selected feature $S_{t-1}$ is calculated by greedy algorithm based on this criterion that it can be replaced by $f_t$ and the significance of $S_{t-1}$ is unchanged. 
         * $|B_{t}|$=0. $f_t$ is discarded.
         * $|B_{t}|$=1. Add or discard $f_t$ randomly.
-        * $|B_{t}|$>1. Discard $B_{t}$ and add $f_t$.
+        * $|B_{t}|\gt$1. Discard $B_{t}$ and add $f_t$.
 * Distributed Memory allows the intermediate results cached on the cluster and help improve computational efficiency。
 
 ## Instructions
