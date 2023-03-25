@@ -26,7 +26,7 @@ There are three main parts:
 
 
 ### RHOFS
-RHOFS.md is the sequential version of RHDOFS, implemented as a function on Matlab.
+RHOFS.m is the sequential version of RHDOFS, implemented as a function on Matlab.
 - Input: `X` is a matrix with one row representing an object and one column representing a feature；`Y` is a vector representing the classes.
 - Output: `selectedFeatures` is the selected feature set; `time` is the running time.
 
