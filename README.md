@@ -8,12 +8,12 @@ Rough Hypercuboid based Distributed Online Feature Selection (RHDOFS) method is 
 There are three main parts:
 * DataSource generates generates a feature data every time. $f_t$ is the $t$-th feature at time $t$.
 * RHDOFS contains two stages:
-    * Online relevance selection. 1) If the relevance of feature $f_t$ is less than the relevance threshold $\theta$, it will be filtered out. 2) Else, if the significance of feature $f_t$ is greater than 0, it will be selected.
-    * Online redundancy elimination. When the significance of feature $f_t$ is equal to 0, it will get to this stage. A subset $B_t$ with maximal cardinality of the selected feature $S_{t-1}$ is calculated by greedy algorithm based on this criterion that it can be replaced by $f_t$ and the significance of $S_{t-1}$ is unchanged. 
+    * Online relevance selection (orange rectangles). 1) If the relevance of feature $f_t$ is less than the relevance threshold $\theta$, it will be filtered out. 2) Else, if the significance of feature $f_t$ is greater than 0, it will be selected.
+    * Online redundancy elimination (golden rectangles). When the significance of feature $f_t$ is equal to 0, it will get to this stage. A subset $B_t$ with maximal cardinality of the selected feature $S_{t-1}$ is calculated by greedy algorithm based on this criterion that it can be replaced by $f_t$ and the significance of $S_{t-1}$ is unchanged. 
         * $|B_{t}|$=0. $f_t$ is discarded.
         * $|B_{t}|$=1. Add or discard $f_t$ randomly.
         * $|B_{t}|$>1. Discard $B_{t}$ and add $f_t$.
-* Distributed Memory allow the intermediate results cached on the cluster and help improve computational efficiency。
+* Distributed Memory allows the intermediate results cached on the cluster and help improve computational efficiency。
 
 ## Instructions
 
