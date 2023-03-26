@@ -11,7 +11,7 @@ There are three main parts:
     * Online relevance selection (orange rectangles). 1) If the relevance of feature $f_t$ is less than the relevance threshold $\theta$, it will be filtered out. 2) Else, if the significance of feature $f_t$ is greater than 0, it will be selected.
     * Online redundancy elimination (golden rectangles). When the significance of feature $f_t$ is equal to 0, it will get to this stage. A subset $B_t$ with maximal cardinality of the selected feature $S_{t-1}$ is calculated by greedy algorithm based on this criterion that it can be replaced by $f_t$ and the significance of $S_{t-1}$ is unchanged. 
         * $|B_{t}|$=0. $f_t$ is discarded.
-        * $|B_{t}|$=1. Keep the feature which can make the objects in the boundary region separable.
+        * $|B_{t}|$=1. Keep the feature which can make the objects in the boundary region more separable.
         * $|B_{t}|\gt$ 1. Discard $B_{t}$ and add $f_t$.
 * Distributed Memory allows the intermediate results caching on the cluster and help improve computational efficiency。
 
